@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="timer.css" />
+		<script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+		<script src="timer.js" type="text/javascript"></script>
+		<link rel="Shortcut Icon" href="img\timer.ico" />
+	</head>
+	<body>
+		<div id="win">
+			<div id="timeBlock">
+				<div id="iconBlock">
+					<img id="imgReset" name="icon" src="img/reset.png" />
+					<img name="icon" src="img/work.png" />
+				</div>
+				<div id="numBlock">
+					<img name="numImg" src="img/0.png" />
+					<img name="numImg" src="img/0.png" />
+					<img name="numImg" src="img/point.png" />
+					<img name="numImg" src="img/0.png" />
+					<img name="numImg" src="img/0.png" />
+				</div>
+			</div>
+			<div id="buttonBlock">
+				<input id="btn1" type="button" value="设置"/>
+				<input id="btn2" type="button" value="开始"/>
+			</div>
+			<div id="setTimeblock">
+				<p id="setLang">
+					<input  type="radio" name="lang" value="CN" checked="checked" />中文
+					<input  type="radio" name="lang" value="EN" />English
+				</p>			
+				<p>
+					<span class="optionLang">工作时间：</span><input type="number" name="setTim" id="workTime" value="30" min="1" max="120"> <span class="optionLang">分钟</span>
+				</p>
+				<p>
+					<span class="optionLang">短休息时间：</span><input type="number" name="setTim" id="shortTime" value="3" min="1" max="60"> <span class="optionLang">分钟</span>
+				</p>
+				<p>
+					<span class="optionLang">长休息时间：</span><input type="number" name="setTim" id="longTime" value="6" min="1" max="60"> <span class="optionLang">分钟</span>
+				</p>
+				<p>
+					<span class="optionLang">短休息：</span><input type="number" name="setTim" id="Times" value="3" min="1" max="10" ><span class="optionLang">次后长休息一次</span> 
+				</p>
+				<p id="alertset">
+					<span class="optionLang">提醒方式：</span>
+					<input  type="radio" name="alertbell" value="bell" checked="checked" /><span class="optionLang">铃声</span>
+					<input  type="radio" name="alertwin" value="win" /><span class="optionLang">弹窗</span>
+				</p>
+				<p id="Volume">
+					<span class="optionLang">音量：</span><input type="number" name="setTim" id="vol" value="20" min="1" max="100"> 
+				</p>				
+			</div>	
+		</div>
+	</body>
+</html>

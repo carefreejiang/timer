@@ -1,0 +1,19 @@
+{
+	"name": "Timer",
+	"version": "0.1.2",
+	"main": "timer.html",
+    "repository": "https://github.com/carefreejiang/timer",
+    "license": "BSD",
+	"window": {
+		"icon": "img/icon.png",
+		"resizable": false,
+		"height": 140,
+		"width": 210
+	},
+    "devDependencies": {
+        "nw": "0.17.6-sdk"
+    },
+    "scripts": {
+        "start": "nw ."
+    }
+}
